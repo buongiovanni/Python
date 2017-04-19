@@ -4,14 +4,14 @@ def calcula_ideal(peso, sexo, altura):
 		if peso>ideal:
 			print " Resultado: No posee un peso ideal. Peso ideal para hombre: "+str(ideal)+"\n"
 	        else:
-		        print " Resultado: Posee un peso ideal para hombre.\n"
+		        print " Resultado: Posee un peso ideal para hombre.Peso ideal para hombre: "+str(ideal)+\n"
 	else:
 		if sexo == 'm':
 			ideal= 0.70*(int(altura)-140)+40
 			if peso>ideal:
 				print " Resultado: No posee un peso ideal. Peso ideal para mujer: "+str(ideal)+"\n"
 	       		else:
-		        	print " Resultado: Posee un peso ideal para mujer.\n"
+		        	print " Resultado: Posee un peso ideal para mujer.Peso ideal para mujer: "+str(ideal)+\n"
 	
 salir = "n" 	
 while salir == "n":
