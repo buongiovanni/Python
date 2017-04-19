@@ -34,3 +34,17 @@ F.insert(2,'pepe')
 F.remove (F[3])
 
 print F
+
+#Ejercicio 4
+
+print ("Comienzo")
+for i in [3,4,5]:
+	print "ahora i vale: "+str(i)+" y su cuadrado: "+str(i*i)
+
+def mi_funcion (param1,param2):
+      print param1
+      print param2
+
+mi_funcion("hola",2)
+
+
