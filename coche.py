@@ -13,3 +13,13 @@ class Coche:
 			print "Quedan "+str(self.gasolina)+" litros"
 		else:
 			print "No se mueve"
+
+mi_coche = Coche(3)
+
+print mi_coche.gasolina
+mi_coche.arrancar()
+mi_coche.conducir()
+mi_coche.conducir()
+mi_coche.conducir()
+mi_coche.conducir()
+mi_coche.arrancar()
