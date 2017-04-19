@@ -4,18 +4,19 @@ def calcula_ideal(peso, sexo, altura):
 		if peso>ideal:
 			print " Resultado: No posee un peso ideal. Peso ideal para hombre: "+str(ideal)+"\n"
 	        else:
-		        print " Resultado: Posee un peso ideal para hombre.Peso ideal para hombre: "+str(ideal)+\n"
+		        print " Resultado: Posee un peso ideal para hombre.Peso ideal para hombre: "+str(ideal)+"\n"
 	else:
 		if sexo == 'm':
 			ideal= 0.70*(int(altura)-140)+40
 			if peso>ideal:
 				print " Resultado: No posee un peso ideal. Peso ideal para mujer: "+str(ideal)+"\n"
 	       		else:
-		        	print " Resultado: Posee un peso ideal para mujer.Peso ideal para mujer: "+str(ideal)+\n"
+		        	print " Resultado: Posee un peso ideal para mujer.Peso ideal para mujer: "+str(ideal)+"\n"
+		else:
+			print " No ha elegido un sexo correcto, es usted muy raro.\n"
 	
-salir = "n" 	
-while salir == "n":
-       
+repetir = "y" 	
+while repetir == "y":   
 	print " "
 	print " **************************** "
 	print " **       PESO IDEAL       ** "
@@ -28,9 +29,12 @@ while salir == "n":
 	print " ____________________________________________\n"
 
 	calcula_ideal(peso,sexo,altura)
-	salir = raw_input(" Desea salir (y/n): ")
+	repetir = raw_input(" Desea repetir? (y/n): ")
 	import os
-	os.system('clear')
+	if repetir=="y":
+		os.system('clear')
+	else:
+		print "\n Vale saborio. Adios \n _________________________________________________"
 	
 
 
